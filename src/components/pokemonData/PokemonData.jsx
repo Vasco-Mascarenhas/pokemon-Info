@@ -13,7 +13,7 @@ import {
   PokemonDataEvolution,
   PokemonDataVarieties,
 } from "./components";
-import "./pokemondata.css";
+import "./pokemonData.css";
 const PokemonData = () => {
   const { selectedPokemon } = usePokemonContext();
   const { data, isLoading, error } = usePokemon(selectedPokemon);

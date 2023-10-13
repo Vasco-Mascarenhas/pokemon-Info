@@ -3,8 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  color: black;
-  background-color: #f6f8fc;
+  color: lightgray;
+  background-color: #1f1837;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -83,6 +83,10 @@ body {
   }
   .more {
     display: flex;
+  }
+
+  .more img {
+    filter: invert(1);
   }
 }
 

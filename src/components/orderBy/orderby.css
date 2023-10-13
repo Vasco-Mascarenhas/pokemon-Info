@@ -13,42 +13,55 @@
   border: none;
   box-shadow: 0px 0px 1px 0px rgb(0 0 0 / 20%);
   padding-inline: 10px;
-}
-
-.order-type option {
-  text-transform: capitalize;
-  height: 30px;
+  background-color: #332e59;
 }
 
 #order .option__control {
   height: 50px;
   border-radius: 8px;
   width: 150px;
+  background-color: #332e59;
 }
 
 #order .option__option {
   cursor: pointer;
-  color: black;
+  color: lightgray;
+  background-color: #332e59;
+  text-transform: capitalize;
 }
 
 #order .option__option--is-selected {
-  background-color: #e60012;
+  background-color: #1f1837;
   color: white;
 }
 
 #order .option__control--is-focused {
-  border-color: #e60012;
+  border-color: #1f1837;
   border-width: 1px;
   box-shadow: none;
+}
+
+#order .option__single-value {
+  color: lightgray;
+}
+
+#order .option__menu-list {
+  padding-block: 0;
+}
+
+#order .option__placeholder {
+  color: lightgray;
 }
 
 .order-id input {
   height: 50px;
   width: 70px;
   border-radius: 8px;
+  background-color: #332e59;
   border: none;
+  color: lightgray;
   outline: none;
-  border: 1px solid hsl(0, 0%, 80%);
+  border: 2px solid lightgray;
   text-align: center;
 }
 
@@ -61,10 +74,10 @@
 .clear button {
   height: 50px;
   width: 70px;
-  background-color: white;
-  border: 2px solid #e60012;
+  background-color: #332e59;
+  border: 2px solid lightgray;
   border-radius: 8px;
-  color: #e60012;
+  color: lightgray;
   font-weight: bold;
   cursor: pointer;
 }

@@ -1,0 +1,27 @@
+.pokemon-ability {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+  text-align: center;
+}
+.pokemon-ability span {
+  text-transform: capitalize;
+  position: relative;
+}
+
+.ability-link {
+  background-color: #f6f8fc;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  outline: 2px solid #85ddff;
+}
+
+.ability-link .link-icon {
+  width: 13px;
+  margin-left: 5px;
+}

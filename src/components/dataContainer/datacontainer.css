@@ -1,0 +1,34 @@
+.data-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-block: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 1px #0003;
+  align-items: center;
+  gap: 15px;
+  min-height: 70px;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .data-container {
+    width: 100%;
+    position: fixed;
+    height: initial;
+    bottom: 0;
+    border-radius: 0;
+    max-height: 145px;
+  }
+
+  .data-container:has(.show) {
+    padding-top: 10px;
+    top: 0;
+    bottom: 0;
+    background-color: #0000004a;
+    border-radius: 0;
+    max-height: 100%;
+  }
+}

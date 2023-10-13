@@ -1,0 +1,99 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: black;
+  background-color: #f6f8fc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.ordering {
+  width: 100%;
+  border-bottom: 1px solid #00000012;
+  padding-bottom: 10px;
+}
+.info-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemon-type {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pokemon-type span {
+  padding: 8px 10px;
+  text-transform: capitalize;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.close {
+  display: none;
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 1%;
+  right: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+  .info-container {
+    width: 100%;
+  }
+  .close {
+    display: flex;
+  }
+  .show {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    border-radius: 8px;
+  }
+  .hide {
+    display: none !important;
+  }
+  .more {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    padding-inline: 10px;
+  }
+  .navbar span {
+    display: none;
+  }
+  .show {
+    width: 90%;
+  }
+}

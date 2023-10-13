@@ -1,0 +1,76 @@
+.evolution {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+}
+
+.evolution-info {
+  width: 25%;
+  min-width: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+
+.evolution span {
+  color: gray;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.evolution-info h5 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.evolution-info img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.day-icon {
+  width: 20px;
+}
+
+.evo-info {
+  display: flex;
+  height: 30px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.evo-info img {
+  max-width: 50px;
+}
+
+.item-link {
+  height: inherit;
+}
+
+.react-tooltip {
+  text-transform: capitalize;
+}
+
+.evolution-img {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.evolution-img .link-icon {
+  position: absolute;
+  width: 15px;
+  right: 0;
+  top: 0;
+}

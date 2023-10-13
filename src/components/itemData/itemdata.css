@@ -1,0 +1,79 @@
+.item-data {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: white;
+}
+
+.item-data h4,
+h5 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.item-id {
+  color: gray;
+  text-transform: capitalize;
+}
+
+.category {
+  color: gray;
+  text-transform: capitalize;
+}
+
+.flavor {
+  color: gray;
+  text-transform: lowercase;
+}
+
+.flavor::first-letter {
+  text-transform: capitalize;
+}
+
+.effect {
+  font-weight: bold;
+}
+
+.held-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.item-pokemon {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+
+.mobile-item-data {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 768px) {
+  .item-data {
+    justify-content: flex-start;
+  }
+  .mobile-item-data {
+    display: flex;
+  }
+}

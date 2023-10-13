@@ -1,0 +1,14 @@
+.card img {
+  max-width: 100px;
+  max-height: 70px;
+}
+
+.card .pokemon-id {
+  color: gray;
+}
+
+.card h4 {
+  margin: 0;
+  text-transform: capitalize;
+  color: black;
+}

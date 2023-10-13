@@ -1,0 +1,4 @@
+.pokemon-section {
+  display: flex;
+  gap: 20px;
+}

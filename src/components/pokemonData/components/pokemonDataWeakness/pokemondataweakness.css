@@ -1,0 +1,24 @@
+.weaknesses span {
+  padding: 8px 10px;
+  text-transform: capitalize;
+  color: white;
+  border-radius: 4px;
+}
+
+.weaknesses-inner {
+  display: grid;
+  gap: 5px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+}
+
+.weaknesses-inner img {
+  width: 25px;
+}
+
+.weak-tooltip {
+  text-transform: capitalize;
+  font-weight: bold;
+}

@@ -1,0 +1,24 @@
+.ability-info {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #00000012;
+}
+
+.ability-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ability-header h2 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.ability-header span {
+  color: gray;
+}
+
+.ability-body span {
+  color: gray;
+}

@@ -1,0 +1,29 @@
+.varieties {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+}
+
+.variety {
+  cursor: pointer;
+  width: 33%;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+
+.variety h5 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.variety img {
+  max-width: 100%;
+}

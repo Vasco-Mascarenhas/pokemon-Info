@@ -7,7 +7,7 @@ import { getId } from "../../../../helpers/getId";
 import { Link } from "react-router-dom";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import { handleImgError } from "../../../../helpers/handleImgError";
-
+import { desktop } from "../../../../helpers/mediaQuery";
 const PokemonEvolution = ({ pokemon }) => {
   const { setSelectedPokemon } = usePokemonContext();
   const { setSelectedItem } = useItemContext();
@@ -18,6 +18,13 @@ const PokemonEvolution = ({ pokemon }) => {
     e.target.src = missingImg;
   };
 
+  const handleEvolutionClick = (poke) => {
+    if (desktop.matches) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    setSelectedPokemon(poke);
+  };
+
   console.log();
 
   return (
@@ -25,7 +32,7 @@ const PokemonEvolution = ({ pokemon }) => {
       <div key={`start-${evolutions.species.name}`} className="evolution-info">
         <h5>{evolutions.species.name.replace(/-/g, " ")}</h5>
         <img
-          onClick={() => setSelectedPokemon(getId(evolutions.species.url))}
+          onClick={() => handleEvolutionClick(getId(evolutions.species.url))}
           onError={(e) => handleImgError(e, getId(evolutions.species.url))}
           src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${getId(
             evolutions.species.url
@@ -44,7 +51,7 @@ const PokemonEvolution = ({ pokemon }) => {
           >
             <h5>{ev.species.name.replace(/-/g, " ")}</h5>
             <img
-              onClick={() => setSelectedPokemon(getId(ev.species.url))}
+              onClick={() => handleEvolutionClick(getId(ev.species.url))}
               onError={(e) => handleImgError(e, getId(ev.species.url))}
               src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${getId(
                 ev.species.url
@@ -157,7 +164,7 @@ const PokemonEvolution = ({ pokemon }) => {
             >
               <h5>{ev.species.name.replace(/-/g, " ")}</h5>
               <img
-                onClick={() => setSelectedPokemon(getId(ev.species.url))}
+                onClick={() => handleEvolutionClick(getId(ev.species.url))}
                 onError={(e) => handleImgError(e, getId(ev.species.url))}
                 src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${getId(
                   ev.species.url

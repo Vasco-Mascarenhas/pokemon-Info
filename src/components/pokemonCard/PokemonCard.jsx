@@ -4,10 +4,13 @@ import { getTypeColor } from "../../helpers/getTypeColor";
 import "./pokemoncard.css";
 import { usePokemonContext } from "../../context/selectedPokemon";
 import { handleImgError } from "../../helpers/handleImgError";
-
+import { desktop } from "../../helpers/mediaQuery";
 const PokemonCard = ({ pokemon }) => {
   const { setSelectedPokemon } = usePokemonContext();
   const handleClick = () => {
+    if (desktop.matches) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
     setSelectedPokemon(pokemon.id);
   };
 

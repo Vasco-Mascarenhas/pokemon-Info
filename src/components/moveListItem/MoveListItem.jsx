@@ -1,10 +1,14 @@
 import React from "react";
 import "./movelistitem.css";
 import { getTypeColor } from "../../helpers/getTypeColor";
+import { desktop } from "../../helpers/mediaQuery";
 import { useMoveContext } from "../../context/selectedMove";
 const MoveListItem = ({ move }) => {
   const { setSelectedMove } = useMoveContext();
   const handleMoveClick = (move) => {
+    if (desktop.matches) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
     setSelectedMove(move);
   };
   return (

@@ -4,8 +4,16 @@ import Loader from "../loader/Loader";
 import "./itemcontainer.css";
 import { useItemContext } from "../../context/selectedItem";
 import { handleImgError } from "../../helpers/handleImgError";
+import { desktop } from "../../helpers/mediaQuery";
 const ItemContainer = ({ item, searchedItem, loading, error }) => {
   const { setSelectedItem } = useItemContext();
+  const handleItemclick = (item) => {
+    if (desktop.matches) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    setSelectedItem(item);
+  };
+
   if (loading) {
     return <Loader />;
   }
@@ -16,7 +24,7 @@ const ItemContainer = ({ item, searchedItem, loading, error }) => {
     return (
       <div
         className="single-pokemon"
-        onClick={() => setSelectedItem(item.name)}
+        onClick={() => handleItemclick(item.name)}
       >
         <Card key={item.name}>
           <img
@@ -42,7 +50,7 @@ const ItemContainer = ({ item, searchedItem, loading, error }) => {
           <Card
             id={item.id}
             key={item.id}
-            cardClick={() => setSelectedItem(item.name)}
+            cardClick={() => handleItemclick(item.name)}
           >
             <img
               onError={(e) => handleImgError(e, item.id)}

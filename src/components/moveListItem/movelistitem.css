@@ -23,12 +23,16 @@
 
 .move-type .type {
   padding: 5px;
+  text-transform: capitalize;
   min-width: 60px;
   border-radius: 4px;
   color: white;
   text-align: center;
 }
 
+.move-id {
+  color: gray;
+}
 /*
 
 .move-name {

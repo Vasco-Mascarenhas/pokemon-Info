@@ -23,9 +23,7 @@ const ItemDataContainer = () => {
   };
 
   return isLoading ? (
-    <div className="item-data">
-      <Loader />
-    </div>
+    <Loader />
   ) : data ? (
     <>
       <div className={`item-data ${more ? "show" : "hide"}`}>
@@ -53,8 +51,9 @@ const ItemDataContainer = () => {
         </div>
         <span className="flavor">{flavor ? flavor.text : ""}</span>
         <p className="effect">{effect ? effect.effect : ""}</p>
+        {data.held_by_pokemon != "" ? <h4>Held by:</h4> : ""}
         <div className="held-item">
-          {data.held_by_pokemon
+          {data.held_by_pokemon != ""
             ? data.held_by_pokemon.map((pokemon) => {
                 return (
                   <div className="item-pokemon" key={pokemon.pokemon.name}>

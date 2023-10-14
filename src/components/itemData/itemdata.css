@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   padding: 20px;
   background-color: #332e59;
 }
@@ -35,7 +35,8 @@ h5 {
 }
 
 .effect {
-  font-weight: bold;
+  text-align: justify;
+  margin: 0;
 }
 
 .held-item {

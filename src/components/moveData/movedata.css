@@ -5,15 +5,19 @@
   align-items: center;
   padding: 20px;
   text-align: center;
-  gap: 15px;
   position: relative;
 }
-
-.move-type {
+.move-data h4 {
+  text-transform: capitalize;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.move-data .move-type {
   display: flex;
   width: 100%;
   justify-content: center;
   gap: 20px;
+  margin-top: 20px;
 }
 
 .category {
@@ -23,14 +27,43 @@
 .move-stats {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
 }
+
+.move-category {
+  text-align: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.move-category span {
+  padding-block: 5px;
+  width: 100%;
+  text-transform: capitalize;
+  background-color: #1f1837;
+  border-radius: 8px;
+}
 .move-stat {
   text-align: center;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.move-stat span {
+  padding-block: 5px;
+  width: 100%;
+  background-color: #1f1837;
+  border-radius: 8px;
 }
 
 .move-meta {
+  flex-wrap: wrap;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -38,22 +71,58 @@
 
 .move-meta > div {
   text-align: center;
+  width: 45%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.move-meta span {
+  padding-block: 5px;
+  width: 100%;
+  background-color: #1f1837;
+  border-radius: 8px;
 }
 
 .status-effects {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .status-effects > div {
   text-align: center;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status-effects span {
+  width: 100%;
+  background-color: #1f1837;
+  border-radius: 8px;
+  text-transform: capitalize;
+  padding-block: 5px;
 }
 
 .target {
   text-align: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.target span {
+  width: 100%;
+  background-color: #1f1837;
+  border-radius: 8px;
+  text-transform: capitalize;
+  padding-block: 5px;
 }
 
 .mobile-move-data {

@@ -25,7 +25,7 @@ const MoveData = () => {
           <span>X</span>
         </div>
         <h4>{selectedMove.name.replace(/-/g, " ")}</h4>
-        <span>#{selectedMove.id}</span>
+        <span className="move-id">#{selectedMove.id}</span>
         <span>
           {selectedMove.effect_entries[0].short_effect.replace(
             /\$Effect_chance%/gi,
@@ -54,19 +54,23 @@ const MoveData = () => {
           <div className="move-stats">
             <div className="move-stat">
               <h4>Power</h4>
-              <span>{selectedMove.power}</span>
+              <span>{selectedMove.power ? selectedMove.power : "None"}</span>
             </div>
             <div className="move-stat">
               <h4>PP</h4>
-              <span>{selectedMove.pp}</span>
+              <span>{selectedMove.pp ? selectedMove.pp : "None"}</span>
             </div>
             <div className="move-stat">
               <h4>Priority</h4>
-              <span>{selectedMove.priority}</span>
+              <span>
+                {selectedMove.priority ? selectedMove.priority : "None"}
+              </span>
             </div>
             <div className="move-stat">
               <h4>Accuracy</h4>
-              <span>{selectedMove.accuracy}</span>
+              <span>
+                {selectedMove.accuracy ? selectedMove.accuracy : "None"}
+              </span>
             </div>
           </div>
           <div className="move-meta">

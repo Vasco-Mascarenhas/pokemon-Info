@@ -41,8 +41,14 @@
   box-shadow: none;
 }
 
+#order .option__input-container {
+  color: lightgray;
+  text-transform: capitalize;
+}
+
 #order .option__single-value {
   color: lightgray;
+  text-transform: capitalize;
 }
 
 #order .option__menu-list {

@@ -25,6 +25,13 @@ const PokemonContainer = ({ pokemon, loading, error, searchedPokemon }) => {
       </div>
     );
   }
+  if (pokemon.length <= 0) {
+    return (
+      <p className="no-type">
+        There's no pokemon with that type in database. Please try another type.
+      </p>
+    );
+  }
 
   if (pokemon.length === 1) {
     return (

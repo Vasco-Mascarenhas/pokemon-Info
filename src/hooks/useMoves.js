@@ -1,4 +1,4 @@
-import { useQuery, QueryClient, Query } from "@tanstack/react-query";
+import { useQuery, QueryClient } from "@tanstack/react-query";
 import { useEffect } from "react";
 
 const queryClient = new QueryClient();
@@ -13,13 +13,21 @@ const fetchMoves = async (url) => {
   return response.json();
 };
 
-export function useMoves(searchedMove) {
-  const queryKey = ["Moves", searchedMove];
+export function useMoves(orderFrom, orderTo, searchedMove, typeSelected) {
+  const queryKey = ["Moves", orderFrom, orderTo, searchedMove, typeSelected];
+
+  useEffect(() => {
+    queryClient.invalidateQueries(queryKey);
+  }, [queryKey, orderFrom, orderTo, searchedMove, typeSelected]);
 
   return useQuery(queryKey, async () => {
     const apiUrl = searchedMove
       ? `https://pokeapi.co/api/v2/move/${searchedMove}`
-      : "https://pokeapi.co/api/v2/move/";
+      : typeSelected
+      ? `https://pokeapi.co/api/v2/move/?offset=${orderFrom}&limit=1000`
+      : `https://pokeapi.co/api/v2/move/?offset=${orderFrom}&limit=${
+          orderTo - orderFrom
+        }`;
 
     const moves = await fetchMoves(apiUrl);
 

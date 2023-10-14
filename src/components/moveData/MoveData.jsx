@@ -27,7 +27,7 @@ const MoveData = () => {
         <h4>{selectedMove.name.replace(/-/g, " ")}</h4>
         <span className="move-id">#{selectedMove.id}</span>
         <span>
-          {selectedMove.effect_entries[0].short_effect.replace(
+          {selectedMove.effect_entries[0]?.short_effect.replace(
             /\$Effect_chance%/gi,
             selectedMove.effect_chance + "%"
           )}
@@ -48,7 +48,7 @@ const MoveData = () => {
         </div>
         <div className="move-category">
           <h4>Category</h4>
-          <span>{selectedMove.meta.category.name.replace(/\+/g, " + ")}</span>
+          <span>{selectedMove.meta?.category?.name.replace(/\+/g, " + ")}</span>
         </div>
         <div className="move-info">
           <div className="move-stats">
@@ -76,34 +76,34 @@ const MoveData = () => {
           <div className="move-meta">
             <div className="crit-rate">
               <h4>Crit rate</h4>
-              <span> {selectedMove.meta.crit_rate}%</span>
+              <span> {selectedMove.meta?.crit_rate}%</span>
             </div>
             <div className="flinch">
               <h4>Flinch chance</h4>
-              <span>{selectedMove.meta.flinch_chance}%</span>
+              <span>{selectedMove.meta?.flinch_chance}%</span>
             </div>
             <div className="drain">
               <h4>Drain</h4>
-              <span>{selectedMove.meta.drain}%</span>
+              <span>{selectedMove.meta?.drain}%</span>
             </div>
           </div>
           <div className="status-effects">
             <div className="ailment">
               <h4>Ailment</h4>
-              <span>{selectedMove.meta.ailment.name}</span>
+              <span>{selectedMove.meta?.ailment.name}</span>
             </div>
             <div className="ailment-chance">
               <h4>Ailment Chance</h4>
-              <span>{selectedMove.meta.ailment_chance}%</span>
+              <span>{selectedMove.meta?.ailment_chance}%</span>
             </div>
 
             <div className="effect-chance">
               <h4>Effect Chance</h4>
-              <span>{selectedMove.effect_chance}%</span>
+              <span>{selectedMove?.effect_chance}%</span>
             </div>
             <div className="stat-chance">
               <h4>Stat chance</h4>
-              <span>{selectedMove.meta.stat_chance}%</span>
+              <span>{selectedMove.meta?.stat_chance}%</span>
             </div>
           </div>
         </div>

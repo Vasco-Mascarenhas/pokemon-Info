@@ -20,4 +20,5 @@ export const typeColors = [
   { name: "physical", color: "#C92112" },
   { name: "special", color: "#4F5870" },
   { name: "status", color: "#8C888C" },
+  { name: "shadow", color: "black" },
 ];

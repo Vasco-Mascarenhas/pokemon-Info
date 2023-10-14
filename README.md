@@ -1,8 +1,35 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Pokemon Encyclopedia
 
-Currently, two official plugins are available:
+A Pokémon encyclopedia with a more modern look, made with [**React**](https://react.dev/) and [**PokéAPI**](https://pokeapi.co/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![mewTwo](https://raw.githubusercontent.com/Vasco-Mascarenhas/pokemon-Info/main/public/mewtwo.png)
+
+
+
+## Features
+
+- Search Pokémon by name, id or type.
+- Search Abilities by name or id and see which pokémon have them.
+- Search items by name or id and see which pokémon hold them.
+- Search moves by name or id and see which pokémons have them or can learn them.
+
+## Disclaimer
+
+Some information might be incorrect or missing as im only using data provided from PokéApi
+
+This project is not endorsed, sponsored, or officially associated with Nintendo or the Pokemon Company.
+
+Menu Icons are provided from [**Favicon**](https://www.flaticon.com/free-icons/pokemon")
+
+The design of the website was heavily inspired by [**AC1Design**](https://www.behance.net/angioletto1e90)
+## Technologies Used:
+
+- Vite
+- React
+- React Query
+- React Router
+- React Context
+- React-Select package
+- PokeApi
+- Custom Hooks

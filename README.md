@@ -3,7 +3,7 @@
 
 A Pokémon encyclopedia with a more modern look, made with [**React**](https://react.dev/) and [**PokéAPI**](https://pokeapi.co/)
 
-![mewTwo](https://raw.githubusercontent.com/Vasco-Mascarenhas/pokemon-Info/main/public/mewtwo.png)
+![mewTwo](https://github.com/Vasco-Mascarenhas/pokemon-Info/blob/main/public/smallermewtwo.png?raw=true)
 
 
 
@@ -14,16 +14,7 @@ A Pokémon encyclopedia with a more modern look, made with [**React**](https://r
 - Search items by name or id and see which pokémon hold them.
 - Search moves by name or id and see which pokémons have them or can learn them.
 
-## Disclaimer
-
-Some information might be incorrect or missing as im only using data provided from PokéApi
-
-This project is not endorsed, sponsored, or officially associated with Nintendo or the Pokemon Company.
-
-Menu Icons are provided from [**Favicon**](https://www.flaticon.com/free-icons/pokemon")
-
-The design of the website was heavily inspired by [**AC1Design**](https://www.behance.net/angioletto1e90)
-## Technologies Used:
+## Technologies Used
 
 - Vite
 - React
@@ -33,3 +24,14 @@ The design of the website was heavily inspired by [**AC1Design**](https://www.be
 - React-Select package
 - PokeApi
 - Custom Hooks
+
+## Disclaimer
+
+Some information might be incorrect or missing as im only using data provided from PokéApi
+
+This project is not endorsed, sponsored, or officially associated with Nintendo or the Pokemon Company.
+
+Menu Icons are provided from [**Favicon**](https://www.flaticon.com/free-icons/pokemon")
+
+The design of the website was heavily inspired by [**AC1Design**](https://www.behance.net/angioletto1e90)
+

@@ -3,7 +3,7 @@
 
 A Pokémon encyclopedia with a more modern look, made with [**React**](https://react.dev/) and [**PokéAPI**](https://pokeapi.co/)
 
-![mewTwo](https://github.com/Vasco-Mascarenhas/pokemon-Info/blob/main/public/smallermewtwo.png?raw=true)
+![Pokemon](https://raw.githubusercontent.com/Vasco-Mascarenhas/md-images/main/pokemonaa.png?token=GHSAT0AAAAAACGIGP6JS2L6MXCHIAXUP7VQZJL52JA)
 
 
 

@@ -48,7 +48,11 @@ const MoveData = () => {
         </div>
         <div className="move-category">
           <h4>Category</h4>
-          <span>{selectedMove.meta?.category?.name.replace(/\+/g, " + ")}</span>
+          <span>
+            {selectedMove.meta?.category?.name
+              .replace(/\+/g, " + ")
+              .replace(/-/g, " ")}
+          </span>
         </div>
         <div className="move-info">
           <div className="move-stats">

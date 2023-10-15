@@ -14,10 +14,10 @@ const Home = () => {
           <img src={mewTwo} alt="intro image" />
         </div>
         <div className="intro-content">
-          <h1>Pokemon Encyclopedia</h1>
+          <h1>Pokémon Info App</h1>
           <p>
-            A Pokémon encyclopedia with a more modern look, made with{" "}
-            <b>React</b> and{" "}
+            A Pokémon Info App with a more modern look, made with <b>React</b>{" "}
+            and{" "}
             <a href="https://pokeapi.co/" target="_blank">
               PokéAPI
             </a>
